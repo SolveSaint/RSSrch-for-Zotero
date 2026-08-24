@@ -1,5 +1,5 @@
 ---
-updated: 08/24/2026 6:34 PM
+updated: 08/24/2026 6:37 PM
 ---
 
 # RSSrch for Zotero
@@ -30,7 +30,7 @@ Organize feeds, filter papers, score relevance, and surface research that matche
 
 ## Installation
 
-1. Download the [RSSrch XPI](rssrch-v0.9.8.4-release.xpi).
+1. Download the [RSSrch XPI](downloads/rssrch-v0.9.8.4-release.xpi).
 2. Open Zotero 10.
 3. Go to:
 
