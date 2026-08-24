@@ -30,4 +30,6 @@ RSSrch is a Zotero plugin for managing RSS feeds with folders, filtering rules, 
 
 Download the latest XPI [release](https://github.com/SolveSaint/RSSrch-for-Zotero/releases/) and install it in Zotero 10.
 
+Installation with a large RSS library will take some time to process and enrich. Please be aware of this.
+
 More documentation coming soon.
