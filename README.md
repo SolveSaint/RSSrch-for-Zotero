@@ -1,5 +1,5 @@
 ---
-updated: 08/24/2026 6:47 PM
+updated: 08/24/2026 6:49 PM
 ---
 
 # RSSrch for Zotero
@@ -41,9 +41,3 @@ Organize feeds, filter papers, score relevance, and surface research that matche
 ## Documentation
 
 Documentation and examples are being developed.
-
-## Source Code
-
-RSSrch is open source:
-
-[GitHub Repository](https://github.com/SolveSaint/RSSrch-for-Zotero)

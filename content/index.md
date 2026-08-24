@@ -1,6 +1,6 @@
 ---
 created: 2026-08-24
-updated: 08/24/2026 6:48 PM
+updated: 08/24/2026 6:49 PM
 title: RSSrch for Zotero
 description: A Zotero plugin for organizing RSS feeds, applying research rules, scoring relevance, and discovering papers aligned with your research goals.
 tags:
