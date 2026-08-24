@@ -1,3 +1,4 @@
+import Lightbox from "./Lightbox"
 import NotFound from "./pages/404"
 import Head from "./Head"
 import Spacer from "./Spacer"
@@ -10,5 +11,15 @@ export { componentRegistry, defineComponent } from "./registry"
 export { External } from "./external"
 export type { ComponentManifest, RegisteredComponent } from "./registry"
 export type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+export {
+  Head,
+  Spacer,
+  DesktopOnly,
+  MobileOnly,
+  NotFound,
+  Flex,
+  ConditionalRender,
+  Lightbox,
+}
 
 export { Head, Spacer, DesktopOnly, MobileOnly, NotFound, Flex, ConditionalRender }
