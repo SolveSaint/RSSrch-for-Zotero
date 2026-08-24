@@ -1,17 +1,52 @@
-# Quartz v5
+---
+title: RSSrch for Zotero
+description: A research-focused RSS feed manager and discovery plugin for Zotero 10.
+---
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+# RSSrch for Zotero
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+RSSrch is a Zotero 10 plugin designed to transform RSS feeds into a research discovery workflow.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Organize feeds, filter papers, score relevance, and surface research that matches your goals.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+[Download RSSrch for Zotero](static/downloads/rssrch-v0.9.8.4.xpi)
 
-## Sponsors
+## Features
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+### Research-focused feed management
+
+- Organize Zotero RSS feeds with folders
+- Manage research domains and topics
+- Filter articles based on customizable rules
+
+### Relevance scoring
+
+- Score papers based on research interests
+- Highlight high-value discoveries
+- Reduce time spent sorting through large feed collections
+
+### AI-assisted research setup
+
+- Create research rules based on your goals
+- Import customized scoring configurations
+- Adapt RSSrch to different research workflows
+
+## Installation
+
+1. Download the RSSrch XPI file.
+2. Open Zotero 10.
+3. Go to:
+
+   `Tools → Add-ons → Gear icon → Install Add-on From File`
+
+4. Select the downloaded XPI.
+
+## Documentation
+
+Documentation and examples are being developed.
+
+## Source Code
+
+RSSrch is open source:
+
+[GitHub Repository](https://github.com/SolveSaint/RSSrch-for-Zotero)
