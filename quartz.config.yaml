@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+
 configuration:
   pageTitle: RSSrch for Zotero
   pageTitleSuffix: ""
@@ -9,12 +11,14 @@ configuration:
 
   ignorePatterns:
     - private
-    - drafts
+    - templates
     - .obsidian
-
-  defaultDateType: created
+    - drafts
 
   theme:
+    fontOrigin: googleFonts
+    cdnCaching: true
+
     typography:
       header: Schibsted Grotesk
       body: Source Sans Pro
@@ -29,60 +33,199 @@ configuration:
         dark: "#ebebec"
         secondary: "#7b97aa"
         tertiary: "#84a59d"
-        highlight: "#263238"
-        textHighlight: "#fff236"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#b3aa0288"
 
 plugins:
-  transformers:
-    - Plugin.FrontMatter()
-    - Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "git", "filesystem"],
-      })
-    - Plugin.SyntaxHighlighting()
-    - Plugin.ObsidianFlavoredMarkdown()
-    - Plugin.GitHubFlavoredMarkdown()
-    - Plugin.TableOfContents()
-    - Plugin.CrawlLinks()
-    - Plugin.Description()
-    - Plugin.Latex()
+  - source: "@quartz-community/created-modified-date"
+    enabled: true
+    options:
+      defaultDateType: modified
+      priority:
+        - frontmatter
+        - git
+        - filesystem
+    order: 10
 
-  filters:
-    - Plugin.RemoveDrafts()
+  - source: "@quartz-community/syntax-highlighting"
+    enabled: true
+    options:
+      theme:
+        light: github-light
+        dark: github-dark
+      keepBackground: false
+    order: 20
 
-  emitters:
-    - Plugin.AliasRedirects()
-    - Plugin.ComponentResources()
-    - Plugin.ContentPage()
-    - Plugin.FolderPage()
-    - Plugin.TagPage()
-    - Plugin.ContentIndex()
-    - Plugin.Assets()
-    - Plugin.Static()
-    - Plugin.Favicon()
-    - Plugin.NotFoundPage()
-    - Plugin.RecentNotes()
-    - Plugin.RSS()
-    - Plugin.Search()
-    - Plugin.CustomOgImages()
+  - source: "@quartz-community/obsidian-flavored-markdown"
+    enabled: true
+    options:
+      enableInHtmlEmbed: false
+      enableCheckbox: true
+    order: 30
 
-  components:
-    - source: "@quartz-community/explorer"
-      enabled: true
+  - source: "@quartz-community/github-flavored-markdown"
+    enabled: true
+    order: 40
 
-    - source: "@quartz-community/search"
-      enabled: true
+  - source: "@quartz-community/table-of-contents"
+    enabled: true
+    order: 50
+    layout:
+      position: right
+      priority: 30
 
-    - source: "@quartz-community/graph"
-      enabled: false
+  - source: "@quartz-community/crawl-links"
+    enabled: true
+    options:
+      markdownLinkResolution: shortest
+    order: 60
 
-    - source: "@quartz-community/darkmode"
-      enabled: false
+  - source: "@quartz-community/description"
+    enabled: true
+    order: 70
 
-    - source: "@quartz-community/cname"
-      enabled: false
+  - source: "@quartz-community/latex"
+    enabled: true
+    options:
+      renderEngine: katex
+    order: 80
 
-    - source: "@quartz-community/footer"
-      enabled: true
-      options:
-        links:
-          GitHub: https://github.com/SolveSaint/RSSrch-for-Zotero
+  - source: "@quartz-community/remove-draft"
+    enabled: true
+
+  - source: "@quartz-community/alias-redirects"
+    enabled: true
+
+  - source: "@quartz-community/content-index"
+    enabled: true
+    options:
+      enableSiteMap: true
+      enableRSS: true
+
+  - source: "@quartz-community/favicon"
+    enabled: true
+
+  - source: "@quartz-community/og-image"
+    enabled: true
+
+  - source: "@quartz-community/cname"
+    enabled: false
+
+  - source: "@quartz-community/canvas-page"
+    enabled: false
+
+  - source: "@quartz-community/content-page"
+    enabled: true
+
+  - source: "@quartz-community/folder-page"
+    enabled: true
+
+  - source: "@quartz-community/tag-page"
+    enabled: true
+
+  - source: "@quartz-community/explorer"
+    enabled: true
+    layout:
+      position: left
+      priority: 50
+
+  - source: "@quartz-community/graph"
+    enabled: false
+
+  - source: "@quartz-community/search"
+    enabled: true
+    layout:
+      position: left
+      priority: 20
+      group: toolbar
+      groupOptions:
+        grow: true
+
+  - source: "@quartz-community/backlinks"
+    enabled: true
+    layout:
+      position: right
+      priority: 50
+
+  - source: "@quartz-community/article-title"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 10
+
+  - source: "@quartz-community/content-meta"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 20
+
+  - source: "@quartz-community/tag-list"
+    enabled: false
+    layout:
+      position: beforeBody
+      priority: 30
+
+  - source: "@quartz-community/page-title"
+    enabled: true
+    layout:
+      position: left
+      priority: 10
+
+  - source: "@quartz-community/darkmode"
+    enabled: false
+
+  - source: "@quartz-community/reader-mode"
+    enabled: true
+    layout:
+      position: left
+      priority: 35
+      group: toolbar
+
+  - source: "@quartz-community/breadcrumbs"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 5
+      condition: not-index
+
+  - source: "@quartz-community/comments"
+    enabled: false
+
+  - source: "@quartz-community/footer"
+    enabled: true
+    options:
+      links:
+        GitHub: https://github.com/SolveSaint/RSSrch-for-Zotero
+    layout:
+      position: footer
+      priority: 50
+
+layout:
+  groups:
+    toolbar:
+      priority: 35
+      direction: row
+      gap: 0.5rem
+
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+
+    content: {}
+
+    folder:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+
+    tag:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+
+    canvas: {}
