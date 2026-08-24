@@ -1,11 +1,8 @@
-# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
-
 configuration:
   pageTitle: RSSrch for Zotero
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
-
   locale: en-US
 
   baseUrl: solvesaint.github.io/RSSrch-for-Zotero
@@ -61,17 +58,31 @@ plugins:
     - Plugin.ContentIndex()
     - Plugin.Assets()
     - Plugin.Static()
-
     - Plugin.Favicon()
     - Plugin.NotFoundPage()
-
     - Plugin.RecentNotes()
     - Plugin.RSS()
     - Plugin.Search()
-    - Plugin.Graph()
-
     - Plugin.CustomOgImages()
 
-    - Plugin.CNAME({
-        domain: "",
-      })
+  components:
+    - source: "@quartz-community/explorer"
+      enabled: true
+
+    - source: "@quartz-community/search"
+      enabled: true
+
+    - source: "@quartz-community/graph"
+      enabled: false
+
+    - source: "@quartz-community/darkmode"
+      enabled: false
+
+    - source: "@quartz-community/cname"
+      enabled: false
+
+    - source: "@quartz-community/footer"
+      enabled: true
+      options:
+        links:
+          GitHub: https://github.com/SolveSaint/RSSrch-for-Zotero
