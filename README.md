@@ -1,6 +1,5 @@
 ---
-title: RSSrch for Zotero
-description: A research-focused RSS feed manager and discovery plugin for Zotero 10.
+updated: 08/24/2026 6:27 PM
 ---
 
 # RSSrch for Zotero
