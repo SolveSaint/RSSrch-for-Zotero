@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+
+configuration:
+  pageTitle: RSSrch for Zotero
+  pageTitleSuffix: ""
+  enableSPA: true
+  enablePopovers: true
+
+  locale: en-US
+
+  baseUrl: solvesaint.github.io/RSSrch-for-Zotero
+
+  ignorePatterns:
+    - private
+    - drafts
+    - .obsidian
+
+  defaultDateType: created
+
+  theme:
+    typography:
+      header: Schibsted Grotesk
+      body: Source Sans Pro
+      code: IBM Plex Mono
+
+    colors:
+      darkMode:
+        light: "#161618"
+        lightgray: "#393639"
+        gray: "#646464"
+        darkgray: "#d4d4d4"
+        dark: "#ebebec"
+        secondary: "#7b97aa"
+        tertiary: "#84a59d"
+        highlight: "#263238"
+        textHighlight: "#fff236"
+
+plugins:
+  transformers:
+    - Plugin.FrontMatter()
+    - Plugin.CreatedModifiedDate({
+        priority: ["frontmatter", "git", "filesystem"],
+      })
+    - Plugin.SyntaxHighlighting()
+    - Plugin.ObsidianFlavoredMarkdown()
+    - Plugin.GitHubFlavoredMarkdown()
+    - Plugin.TableOfContents()
+    - Plugin.CrawlLinks()
+    - Plugin.Description()
+    - Plugin.Latex()
+
+  filters:
+    - Plugin.RemoveDrafts()
+
+  emitters:
+    - Plugin.AliasRedirects()
+    - Plugin.ComponentResources()
+    - Plugin.ContentPage()
+    - Plugin.FolderPage()
+    - Plugin.TagPage()
+    - Plugin.ContentIndex()
+    - Plugin.Assets()
+    - Plugin.Static()
+
+    - Plugin.Favicon()
+    - Plugin.NotFoundPage()
+
+    - Plugin.RecentNotes()
+    - Plugin.RSS()
+    - Plugin.Search()
+    - Plugin.Graph()
+
+    - Plugin.CustomOgImages()
+
+    - Plugin.CNAME({
+        domain: "",
+      })
