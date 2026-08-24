@@ -5,7 +5,7 @@ configuration:
   enableSPA: true
   enablePopovers: true
   analytics:
-    provider:
+    provider: plausible
   locale: en-US
   baseUrl: solvesaint.github.io/RSSrch-for-Zotero
   ignorePatterns:
@@ -180,7 +180,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: "@quartz-community/reader-mode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -200,7 +200,7 @@ plugins:
       position: afterBody
       priority: 10
   - source: "@quartz-community/footer"
-    enabled: true
+    enabled: false
     options:
       links:
         GitHub: https://github.com/jackyzha0/quartz
