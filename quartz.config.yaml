@@ -203,7 +203,7 @@ plugins:
     enabled: true
     options:
       links:
-        Support Development: https://ko-fi.com/solvesaint
+        Support RSSrch's Development: https://ko-fi.com/solvesaint
     layout:
       position: footer
       priority: 50
