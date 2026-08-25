@@ -12,7 +12,7 @@ import Flex from "./Flex"
 
 import ConditionalRender from "./ConditionalRender"
 
-import Lightbox from "./Lightbox"
+import Lightbox from "./lightbox"
 
 export { componentRegistry, defineComponent } from "./registry"
 
