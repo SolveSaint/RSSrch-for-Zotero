@@ -5,7 +5,7 @@ import DesktopOnly from "./DesktopOnly"
 import MobileOnly from "./MobileOnly"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
-import Lightbox from "./lightbox"
+import Lightbox from "./scripts/lightbox"
 
 export { componentRegistry, defineComponent } from "./registry"
 export { External } from "./external"
