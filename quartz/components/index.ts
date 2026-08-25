@@ -28,5 +28,5 @@ export {
   NotFound,
   Flex,
   ConditionalRender,
-  Lightbox,
+  Lightbox
 }
