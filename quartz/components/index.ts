@@ -5,10 +5,10 @@ import DesktopOnly from "./DesktopOnly"
 import MobileOnly from "./MobileOnly"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
-import Lightbox from "./Lightbox"
+import Lightbox from "./lightbox"
 
 export { componentRegistry, defineComponent } from "./registry"
 export { External } from "./external"
 export type { ComponentManifest, RegisteredComponent } from "./registry"
 
-export { Head, Spacer, DesktopOnly, MobileOnly, NotFound, Flex, ConditionalRender, Lightbox }
+export { Head, Spacer, DesktopOnly, MobileOnly, NotFound, Flex, ConditionalRender, lightbox }
