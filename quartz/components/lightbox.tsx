@@ -1,6 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor } from "./types"
 
-import script from "./scripts/lightbox"
+import script from "./lightbox"
 
 const Lightbox: QuartzComponent = () => {
   return null
