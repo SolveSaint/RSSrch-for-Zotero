@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "rssrch@solvesaint": {
+      "updates": [
+        {
+          "version": "0.9.9.3",
+          "update_link": "https://github.com/SolveSaint/RSSrch-for-Zotero/releases/download/v0.9.9.3/rssrch-v0.9.9.3.xpi"
+        }
+      ]
+    }
+  }
+}
