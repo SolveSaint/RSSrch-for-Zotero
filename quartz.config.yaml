@@ -200,7 +200,7 @@ plugins:
       position: afterBody
       priority: 10
   - source: "@quartz-community/footer"
-    enabled: false
+    enabled: true
     options:
       links:
         Support Development: https://ko-fi.com/solvesaint
