@@ -238,6 +238,11 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: "lightbox"
+	enabled: true
+	layout:
+	   position: afterBody
+	   priority: 100
   - source: "@quartz-community/unlisted-pages"
     enabled: true
     options: {}
