@@ -1,7 +1,8 @@
 ---
-updated: 08/26/2026 6:42 PM
+updated: 08/26/2026 6:45 PM
 title: First Steps
 description: Configure RSSrch for your research using the Research Setup Wizard and AI-assisted research model workflow.
+siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/first-steps
 tags:
   - getting-started
   - setup
@@ -21,7 +22,7 @@ In Zotero, open:
 
 **Tools → RSSrch → Research Setup & Refinement…**
 
-![RSSrch Research Setup Wizard](https://chatgpt.com/g/g-p-6a89d799c62c81919861ccbeb3c89ce0-rssrch-for-zotero/c/assets/images/RSSrch%20-%20Wizard.png)
+![[RSSrch - Wizard.png]]
 
 For a new RSSrch installation, this opens the **Research Setup Wizard**.
 

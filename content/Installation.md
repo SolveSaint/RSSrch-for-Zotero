@@ -1,7 +1,8 @@
 ---
-updated: 08/26/2026 6:42 PM
+updated: 08/26/2026 6:43 PM
 title: Installation
 description: Install RSSrch 1.0.0 in Zotero 10 and prepare RSSrch for first-time setup.
+siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/installation
 tags:
   - getting-started
   - installation
