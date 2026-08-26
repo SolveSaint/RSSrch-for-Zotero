@@ -1,5 +1,5 @@
 ---
-updated: 08/26/2026 6:41 PM
+updated: 08/26/2026 6:42 PM
 title: Installation
 description: Install RSSrch 1.0.0 in Zotero 10 and prepare RSSrch for first-time setup.
 tags:
@@ -8,8 +8,6 @@ tags:
   - zotero
   - rssrch
 ---
-
-# Installation
 
 RSSrch 1.0.0 is a research workflow plugin for **Zotero 10**.
 
