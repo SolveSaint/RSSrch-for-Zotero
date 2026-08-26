@@ -1,5 +1,5 @@
 ---
-updated: 08/26/2026 6:51 PM
+updated: 08/26/2026 6:57 PM
 title: Feed Folders
 description: Organize Zotero RSS feeds into nested research folders and work with combined folder views in RSSrch.
 tags:
@@ -10,17 +10,15 @@ tags:
   - rssrch
 ---
 
-# Feed Folders
-
 RSSrch Feed Folders let you organize Zotero RSS subscriptions into a hierarchy built around your research.
 
 They provide structure for large feed libraries without creating Zotero collections or changing how Zotero manages RSS subscriptions.
 
-![[RSSrch - Folder Panel.png]]
+![[RSSrch - Folders Example.png]]
 
 ## How Feed Folders work
 
-RSSrch folders are an organizational layer placed inside Zotero's **Feeds** tree.
+RSSrch folders are an organizational layer inside Zotero's **Feeds** tree.
 
 For example:
 
@@ -46,11 +44,9 @@ A folder can contain:
 RSSrch supports nested folders up to 16 levels deep.
 
 > [!important]  
-> RSSrch Feed Folders are not Zotero collections. Moving a feed into an RSSrch folder does not move articles into a collection or alter the underlying Zotero feed subscription.
+> RSSrch Feed Folders are not Zotero collections. Organizing a feed in an RSSrch folder does not change the underlying Zotero feed subscription.
 
 ## Create a folder
-
-There are several ways to create Feed Folders.
 
 ### From the Feeds tree
 
@@ -58,7 +54,7 @@ Right-click **Feeds** and choose:
 
 **Add folder…**
 
-Enter a name for the folder.
+Enter a name for the new folder.
 
 ### From the RSSrch menu
 
@@ -66,30 +62,29 @@ Open:
 
 **Tools → RSSrch → Feed Folders → New Folder…**
 
-### Create a subfolder
+## Create a subfolder
 
-Select an existing RSSrch folder and either:
+Right-click an existing RSSrch folder and choose:
 
-- right-click it and choose **New Subfolder…**
-    
-- open **Tools → RSSrch → Feed Folders → New Subfolder in Selected Folder…**
-    
+**New Subfolder…**
 
-The new folder is created beneath the selected folder.
+You can also use:
+
+**Tools → RSSrch → Feed Folders → New Subfolder in Selected Folder…**
+
+The new folder is created inside the selected folder.
 
 ## Add feeds to folders
 
-The easiest way to organize existing feeds is with drag and drop.
+Feeds can be organized with drag and drop.
 
-Drag a Zotero feed from the Feeds tree onto an RSSrch folder.
+Drag a Zotero feed onto an RSSrch folder to place it inside that folder.
 
-RSSrch moves the feed into that folder's position in the tree without changing the actual Zotero subscription.
+RSSrch changes only the organizational location of the feed. The underlying Zotero subscription remains intact.
 
-### Move several feeds at once
+### Move multiple feeds
 
-You can select multiple Zotero feeds and drag the selection into a folder.
-
-RSSrch moves all selected feeds together.
+You can select multiple Zotero feeds and drag them into an RSSrch folder together.
 
 ### Create a folder from selected feeds
 
@@ -97,65 +92,49 @@ Select one or more feeds, right-click the selection, and choose:
 
 **Add to folder…**
 
-RSSrch prompts for a new folder name and places the selected feeds into the new folder.
+RSSrch asks for a folder name and creates a new folder containing the selected feeds.
 
 ## Move feeds between folders
 
 Drag a feed from one RSSrch folder onto another folder.
 
-The feed's RSSrch organization changes immediately.
+The feed is reassigned to the destination folder.
 
-The Zotero feed itself remains unchanged.
+Its Zotero subscription and feed items are not changed.
 
 ## Remove a feed from a folder
 
-Right-click a feed that is currently inside an RSSrch folder and choose:
+Right-click a feed that is currently organized inside an RSSrch folder and choose:
 
 **Remove from folder**
 
-The feed returns to the top-level **Feeds** area.
+The feed is returned to the top-level **Feeds** area.
 
-Removing a feed from an RSSrch folder does not unsubscribe from the feed and does not delete its items.
+Removing a feed from an RSSrch folder does not unsubscribe from it and does not delete its items.
 
 ## Move folders
 
-RSSrch folders themselves can also be dragged.
+RSSrch folders can also be moved with drag and drop.
 
-Drag one folder onto another folder to make it a subfolder.
+Drag one RSSrch folder onto another folder to make it a subfolder.
 
-RSSrch prevents moves that would:
-
-- place a folder inside itself
-    
-- place a folder inside one of its own descendants
-    
-- exceed the maximum nesting depth
-    
+RSSrch prevents invalid moves such as placing a folder inside itself or one of its own descendants.
 
 ## Expand and collapse folders
 
-RSSrch folders behave as expandable containers in Zotero's Feeds tree.
+RSSrch folders can be expanded and collapsed in Zotero's Feeds tree.
 
 Double-click a folder to expand or collapse it.
 
-You can also use:
-
-|Key|Action|
-|---|---|
-|`+`|Expand the selected folder|
-|`-`|Collapse the selected folder|
-|`F2`|Rename the selected folder on Windows|
-|`Delete`|Delete the selected RSSrch folder|
-
-Folder expansion state is remembered by RSSrch.
+RSSrch remembers the folder expansion state.
 
 ## Selecting a folder
 
-Selecting an RSSrch folder creates a combined view of the articles contained in its feeds.
+Selecting an RSSrch folder displays the feed items belonging to that research scope.
 
-Importantly, the view includes feeds inside **descendant subfolders**, not only feeds directly attached to the selected folder.
+The view includes feeds inside the selected folder and feeds inside its descendant subfolders.
 
-Using the previous example:
+For example:
 
 ```text
 Neurology
@@ -166,24 +145,24 @@ Neurology
 └── Mitochondria
 ```
 
-Selecting **Neurology** displays feed items from all of those research areas.
+Selecting **Neurology** displays items from feeds throughout that hierarchy.
 
 Selecting **ALS Research** displays items from:
 
 - feeds directly inside ALS Research
     
-- Motor Neurons
+- feeds inside Motor Neurons
     
-- Excitotoxicity
+- feeds inside Excitotoxicity
     
 
-This allows a folder to function as a research scope.
+This lets a folder represent an entire research area rather than just a visual container.
 
 ## Folder tags
 
-When an RSSrch folder is selected, RSSrch also expands Zotero's Tag Selector to the feeds represented by that folder.
+Selecting an RSSrch folder also expands Zotero's Tag Selector to the feeds represented by that folder.
 
-This means the Tag Selector can show the combined tags associated with articles across the selected folder and its descendant feeds.
+The Tag Selector can therefore show tags from items across the selected folder and its descendant feeds.
 
 This makes it possible to explore the terminology appearing across an entire research area instead of examining one feed at a time.
 
@@ -191,34 +170,34 @@ See [[Automatic Tags and Folder Tags]] for more information.
 
 ## Folder dashboard
 
-Selecting an RSSrch folder also displays a folder dashboard in the reader area.
+Selecting an RSSrch folder also displays an RSSrch dashboard in the reader area.
 
-![RSSrch Folder Dashboard](https://chatgpt.com/g/g-p-6a89d799c62c81919861ccbeb3c89ce0-rssrch-for-zotero/c/assets/images/RSSrch%20-%20Folder%20Panel.png)
+![[RSSrch - Folder Panel.png]]
 
-The dashboard provides information about the selected folder, including:
+The folder dashboard shows information about the selected folder, including:
 
 - folder name
     
-- direct feeds in the folder
+- number of feeds directly inside the folder
     
-- combined item count across the folder scope
+- number of feed items in the folder scope
     
 - RSSrch processing state
     
-- effective RSSrch processing state
+- effective processing state
     
-- relevance score metrics
+- optional score metrics
     
 
-### Score metrics
+## Score metrics
 
-Folder score metrics are calculated on demand so normal navigation does not have to wait for scoring work.
+Score metrics are loaded on demand.
 
-Choose:
+Click:
 
 **Load Current Score**
 
-to calculate metrics such as:
+RSSrch can then display:
 
 - Current Score
     
@@ -231,13 +210,17 @@ to calculate metrics such as:
 - Max Score
     
 
-After calculation, the button changes to **Reload Current Score**.
+After metrics have been calculated, the button becomes:
+
+**Reload Current Score**
+
+Loading these metrics on demand keeps normal folder navigation separate from the additional scoring work.
 
 ## RSSrch Active
 
-Every RSSrch folder can control whether RSSrch processing applies to that research scope.
+Each RSSrch folder can control whether RSSrch processing applies to that part of the feed hierarchy.
 
-There are three states:
+There are three folder states.
 
 ### Active
 
@@ -249,15 +232,13 @@ RSSrch processing is disabled for the folder.
 
 ### Inherited
 
-The folder uses the state of its parent folder.
+The folder inherits its processing state from its parent.
 
-New top-level RSSrch folders are enabled by default. New subfolders inherit their parent's state unless you give them an explicit override.
-
-You can change the state from the folder dashboard or by right-clicking a folder and opening:
+The current state can be changed from the folder dashboard or from the folder's right-click menu under:
 
 **RSSrch Active**
 
-Choose:
+The available options are:
 
 - **On**
     
@@ -266,18 +247,20 @@ Choose:
 - **Inherit from Parent**
     
 
+The dashboard also shows the folder's **Effective** state after inheritance is resolved.
+
 > [!important]  
-> RSSrch Active controls **RSSrch processing only**. It does not enable or disable Zotero feed subscriptions, and it does not control Zotero's feed refresh behavior.
+> RSSrch Active controls RSSrch processing only. It does not enable or disable Zotero feed subscriptions and does not control Zotero's feed refresh behavior.
 
-## Feed-level Active overrides
+## Feed-level RSSrch Active settings
 
-Individual feeds inside RSSrch folders can also override the folder state.
+Individual feeds can also have their own RSSrch Active setting.
 
-Right-click a feed and open:
+Right-click a Zotero feed and open:
 
 **RSSrch Active**
 
-You can choose:
+The available options are:
 
 - **On**
     
@@ -286,32 +269,36 @@ You can choose:
 - **Inherit from Folder**
     
 
-This makes it possible to keep a feed organized inside a research folder while excluding it from RSSrch processing when necessary.
+This allows a feed to remain organized within a folder while using a different RSSrch processing state when needed.
 
 ## Rename a folder
 
-Right-click the folder and choose:
+Right-click an RSSrch folder and choose:
 
 **Rename…**
 
-You can also select the folder and press `F2` on Windows.
+You can also use:
 
-Folder names do not change Zotero feed names.
+**Tools → RSSrch → Feed Folders → Rename Selected Folder…**
+
+Changing an RSSrch folder name does not rename the feeds contained inside it.
 
 ## Delete a folder
 
-Select the folder and choose:
+Right-click an RSSrch folder and choose:
 
 **Delete Folder…**
 
-or press `Delete`.
+You can also use:
+
+**Tools → RSSrch → Feed Folders → Delete Selected Folder…**
 
 RSSrch asks for confirmation before deleting the folder.
 
 > [!warning] Deleting an RSSrch folder does not delete Zotero feeds  
-> RSSrch removes only its organizational folder. Zotero feed subscriptions and feed items are preserved.
+> RSSrch removes only the organizational folder. Feed subscriptions and feed items remain in Zotero.
 
-If the deleted folder contains feeds or subfolders, RSSrch moves those contents up one level.
+If the deleted folder contains feeds or subfolders, RSSrch promotes those contents one level upward.
 
 For example:
 
@@ -323,7 +310,7 @@ Feeds
         └── Mechanisms
 ```
 
-Deleting **ALS** promotes its contents:
+Deleting **ALS** results in:
 
 ```text
 Feeds
@@ -332,55 +319,57 @@ Feeds
     └── Mechanisms
 ```
 
-If a top-level folder is deleted, its contents are promoted back to the **Feeds** root.
+If a top-level RSSrch folder is deleted, its direct feeds and subfolders are returned to the **Feeds** root.
 
 ## Automatic provider grouping
 
-RSSrch can automatically organize previously ungrouped feeds when several feeds belong to the same provider family.
+RSSrch can automatically group currently ungrouped feeds by provider.
 
 Open:
 
 **Tools → RSSrch → Feed Folders → Auto-Group Ungrouped Feeds by Provider**
 
-RSSrch examines ungrouped feeds and creates provider folders where appropriate.
+RSSrch examines ungrouped feeds and creates provider-based organization where appropriate.
 
-Existing RSSrch organization is preserved.
+Existing folder organization is left in place.
 
-## OPML and folder organization
+## Export folder organization as OPML
 
-RSSrch can export its feed-folder hierarchy as OPML.
+RSSrch can export the feed-folder hierarchy as OPML.
 
 Open:
 
 **Tools → RSSrch → Setup & Export → Export Feed Folders as OPML…**
 
-The exported OPML retains the RSSrch folder hierarchy and contained feeds.
+The exported OPML preserves the RSSrch folder hierarchy and its feeds.
 
-Zotero remains responsible for normal feed subscription and OPML import behavior.
+See [[OPML Import and Export]] for more information.
 
-See [[OPML Import and Export]] for details.
+## Feed Folders as research scopes
 
-## Feed Folders and research rules
+RSSrch Feed Folders are designed to do more than visually organize a long list of subscriptions.
 
-Folders are more than visual organization.
+A folder can represent a research scope such as:
 
-They define useful research scopes that RSSrch can use when presenting and evaluating literature.
-
-A folder can bring together:
-
-- related journals
+- a disease or condition
     
-- related research topics
+- a mechanism
     
-- multiple subfields
+- a discipline
     
-- broad and narrow research domains
+- a project
+    
+- a journal group
+    
+- a broad research domain with narrower subdomains
     
 
-Combined with [[Rule Manager|RSSrch Rules]], [[Relevance Scoring]], and [[Automatic Tags and Folder Tags]], Feed Folders let you move between broad research areas and narrowly focused literature without reorganizing the underlying Zotero library.
+Selecting that folder then gives you a combined item view and combined tag scope for the literature inside it.
+
+Combined with [[Rule Manager]], [[Relevance Scoring]], and [[Automatic Tags and Folder Tags]], this lets RSSrch organize incoming literature around the structure of the research itself.
 
 ## Next
 
-Once your feeds are organized, the next major step is understanding how RSSrch determines which incoming articles matter to your research.
+Once your feeds are organized, the next major step is understanding how RSSrch determines which incoming articles are relevant to your research.
 
 ➡️ Continue to [[Rule Manager]]
