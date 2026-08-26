@@ -1,6 +1,6 @@
 ---
 created: 2026-08-24
-updated: 08/24/2026 9:31 PM
+updated: 08/26/2026 5:09 PM
 title: RSSrch for Zotero
 description: A Zotero plugin for organizing RSS feeds, applying research rules, scoring relevance, and discovering papers aligned with your research goals.
 tags:
@@ -42,7 +42,3 @@ Download the latest plugin [release](https://github.com/SolveSaint/RSSrch-for-Zo
 **Installation with a large RSS library will take some time to process and enrich. Please be aware of this.**
 
 More documentation coming soon.
-
-#### Known Bugs
-
-- Trying to mark an item unread in the RSS items list doesn't work currently.
