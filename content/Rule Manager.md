@@ -12,8 +12,6 @@ tags:
   - rssrch
 ---
 
-# Rule Manager
-
 The **Rule Manager** is the main workspace for viewing and editing the research rules RSSrch uses to evaluate incoming feed items.
 
 Rules can determine:
