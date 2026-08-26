@@ -7,7 +7,7 @@ Quartz effectively turns your Markdown files and other resources into a bundle o
 However, if you'd like to publish your site to the world, you need a way to host it online. This guide will detail how to deploy with common hosting providers but any service that allows you to deploy static HTML should work as well.
 
 > [!warning]
-> The rest of this guide assumes that you've already created your own GitHub repository for Quartz. If you haven't already, follow the [[installation#Setting Up Your GitHub Repository|GitHub repository setup]] section of the installation guide.
+> The rest of this guide assumes that you've already created your own GitHub repository for Quartz. If you haven't already, follow the [[RSSrch-for-Zotero/docs/getting-started/installation#Setting Up Your GitHub Repository|GitHub repository setup]] section of the installation guide.
 
 > [!hint]
 > Some Quartz features (like [[RSS Feed]] and sitemap generation) require `baseUrl` to be configured properly in your [[configuration]] to work properly. Make sure you set this before deploying!

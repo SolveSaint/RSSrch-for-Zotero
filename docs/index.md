@@ -9,7 +9,7 @@ Quartz is a fast, batteries-included static-site generator that transforms Markd
 Quartz requires **at least [Node](https://nodejs.org/) v22** and `npm` v10.9.2 to function correctly. Ensure you have these installed on your machine before continuing. See the [[getting-started/index#Prerequisites|prerequisites]] for help installing them.
 
 > [!tip] GitHub users
-> You can also use the **[GitHub template](https://github.com/jackyzha0/quartz/generate)** to create your repository in one click, then clone that instead. See [[installation#Option A Use the GitHub Template Recommended|Option A]] in the installation guide.
+> You can also use the **[GitHub template](https://github.com/jackyzha0/quartz/generate)** to create your repository in one click, then clone that instead. See [[RSSrch-for-Zotero/docs/getting-started/installation#Option A Use the GitHub Template Recommended|Option A]] in the installation guide.
 
 ```shell
 # 1. Clone the Quartz repository
@@ -32,7 +32,7 @@ npx quartz build --serve
 Your site is now running at `http://localhost:8080`. From here:
 
 - **[[authoring-content|Write content]]** in the `content/` folder
-- **[[installation|Push to GitHub]]** with `npx quartz sync`
+- **[[RSSrch-for-Zotero/docs/getting-started/installation|Push to GitHub]]** with `npx quartz sync`
 - **[[hosting|Deploy]]** to GitHub Pages, Cloudflare, Netlify, or Vercel
 
 For the full walkthrough, see the [[getting-started/index|Getting Started]] guide.
