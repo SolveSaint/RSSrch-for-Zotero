@@ -1,5 +1,5 @@
 ---
-updated: 08/26/2026 7:09 PM
+updated: 08/26/2026 7:10 PM
 title: Rule Manager
 description: Create, edit, test, import, and export RSSrch admission, scoring, and action rules for global and individual feed scopes.
 siteurl:
