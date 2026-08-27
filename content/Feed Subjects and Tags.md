@@ -1,8 +1,8 @@
 ---
-updated: 08/27/2026 7:17 PM
+updated: 08/27/2026 7:26 PM
 title: Feed Subjects and Tags
 description: Understand how RSSrch uses Zotero automatic tags, manual tags, feed subjects, enrichment-derived subjects, and folder-scoped tag browsing.
-siteurl:
+siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/feed-subjects-and-tags
 tags:
   - feed-subjects
   - tags
