@@ -1,5 +1,5 @@
 ---
-updated: 08/27/2026 7:04 PM
+updated: 08/27/2026 7:10 PM
 title: Preview and Rule Testing
 description: Test RSSrch Admission and Relevance Scoring rules against feed items, inspect detailed diagnostics, and audit rejected papers before committing rule changes.
 siteurl:
@@ -1018,4 +1018,4 @@ When developing or refining RSSrch rules:
 
 RSSrch rules can evaluate automatic subject metadata and tags collected from feed items and metadata enrichment.
 
-➡️ Continue to [[Automatic Tags and Folder Tags]]
+➡️ Continue to [[Feed Subjects and Tags]]
