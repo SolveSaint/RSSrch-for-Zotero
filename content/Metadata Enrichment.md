@@ -1,5 +1,5 @@
 ---
-updated: 08/27/2026 7:17 PM
+updated: 08/27/2026 7:22 PM
 title: Metadata Enrichment
 description: Understand how RSSrch supplements sparse Zotero feed metadata with abstracts, creators, publication details, subjects, DOI information, and provenance-aware metadata from external sources.
 tags:
