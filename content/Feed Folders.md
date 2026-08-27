@@ -1,5 +1,5 @@
 ---
-updated: 08/26/2026 6:57 PM
+updated: 08/27/2026 5:51 PM
 title: Feed Folders
 description: Organize Zotero RSS feeds into nested research folders and work with combined folder views in RSSrch.
 tags:

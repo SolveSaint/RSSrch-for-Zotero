@@ -1,6 +1,6 @@
 ---
 created: 2026-08-24
-updated: 08/26/2026 6:39 PM
+updated: 08/27/2026 5:50 PM
 title: RSSrch for Zotero
 description: A Zotero plugin for organizing RSS feeds, applying research rules, scoring relevance, and discovering papers aligned with your research goals.
 siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/
@@ -71,10 +71,11 @@ RSSrch also includes a Research Setup Wizard to guide the setup and refinement p
 
 ![RSSrch Research Setup Wizard](<assets/images/RSSrch - Wizard.png>)
 
-## Installation
+## [[RSSrch-for-Zotero/content/Installation|Installation]]
 
 Download the latest plugin [release](https://github.com/SolveSaint/RSSrch-for-Zotero/releases/latest) and install the `.xpi` file in Zotero 10.
 
+See the install instructions [[RSSrch-for-Zotero/content/Installation|here]].
 > [!warning] First initialization
 > RSSrch must process and enrich existing feed items when it is first initialized. Large RSS libraries can take a significant amount of time to complete this initial pass. This is expected.
 

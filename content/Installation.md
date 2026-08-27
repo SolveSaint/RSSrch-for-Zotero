@@ -1,5 +1,5 @@
 ---
-updated: 08/26/2026 6:43 PM
+updated: 08/27/2026 5:51 PM
 title: Installation
 description: Install RSSrch 1.0.0 in Zotero 10 and prepare RSSrch for first-time setup.
 siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/installation
@@ -23,8 +23,6 @@ RSSrch 1.0.0 is a research workflow plugin for **Zotero 10**.
 4. Open the Plugins menu and choose **Install Plugin From File…**
     
 5. Select the RSSrch `.xpi` file.
-    
-6. Restart Zotero if requested.
     
 
 After installation, a new **RSSrch** submenu will appear under Zotero's **Tools** menu.
