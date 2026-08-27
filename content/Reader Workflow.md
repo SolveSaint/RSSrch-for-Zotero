@@ -1,7 +1,8 @@
 ---
-updated: 08/27/2026 7:23 PM
+updated: 08/27/2026 7:27 PM
 title: Reader Workflow
 description: Review Zotero feed items with RSSrch effective metadata, rule highlights, relevance scores, read controls, research actions, and an integrated abstract-focused Reader.
+siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/reader-workflow
 tags:
   - reader
   - research-workflow
