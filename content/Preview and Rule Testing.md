@@ -1,8 +1,8 @@
 ---
-updated: 08/27/2026 7:10 PM
+updated: 08/27/2026 7:25 PM
 title: Preview and Rule Testing
 description: Test RSSrch Admission and Relevance Scoring rules against feed items, inspect detailed diagnostics, and audit rejected papers before committing rule changes.
-siteurl:
+siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/preview-and-rule-testing
 tags:
   - preview
   - diagnostics

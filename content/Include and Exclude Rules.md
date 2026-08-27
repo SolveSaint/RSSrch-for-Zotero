@@ -1,5 +1,5 @@
 ---
-updated: 08/27/2026 6:43 PM
+updated: 08/27/2026 7:24 PM
 title: Include and Exclude Rules
 description: Control which feed items are admitted by the RSSrch research model using Include admission gates and Exclude hard vetoes.
 siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/include-and-exclude-rules

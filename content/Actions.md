@@ -1,8 +1,8 @@
 ---
-updated: 08/27/2026 6:58 PM
+updated: 08/27/2026 7:25 PM
 title: Actions
 description: Respond to newly added admitted feed items with score thresholds, rule conditions, Zotero alerts, automatic My Library saves, and manual tags.
-siteurl:
+siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/actions
 tags:
   - actions
   - alerts

@@ -1,8 +1,8 @@
 ---
-updated: 08/27/2026 6:50 PM
+updated: 08/27/2026 7:24 PM
 title: Relevance Scoring
 description: Rank admitted feed items using weighted research concepts, Global and feed-specific scoring rules, and automatic article-type scoring.
-siteurl:
+siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/relevance-scoring
 tags:
   - relevance
   - scoring
