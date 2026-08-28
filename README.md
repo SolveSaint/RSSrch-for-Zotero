@@ -4,6 +4,8 @@ updated: 08/24/2026 6:49 PM
 
 # RSSrch for Zotero
 
+Live Site with documentation: https://solvesaint.github.io/RSSrch-for-Zotero/
+
 RSSrch is a Zotero 10 plugin designed to transform RSS feeds into a research discovery workflow.
 
 Organize feeds, filter papers, score relevance, and surface research that matches your goals.
