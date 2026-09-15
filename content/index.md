@@ -1,5 +1,19 @@
 ---
 created: 2026-08-24
+updated: 09/14/2026 7:59 PM
+title: RSSrch for Zotero
+description: A Zotero plugin for organizing RSS feeds, applying research rules, scoring relevance, and discovering papers aligned with your research goals.
+siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/
+tags:
+  - rssrch
+  - zotero
+  - research
+  - plugin
+aliases:
+  - RSSrch
+---
+---
+created: 2026-08-24
 updated: 09/14/2026 7:48 PM
 title: RSSrch for Zotero
 description: A Zotero plugin for organizing RSS feeds, applying research rules, scoring relevance, and discovering papers aligned with your research goals.
@@ -13,13 +27,47 @@ aliases:
   - RSSrch
 ---
 
-**RSSrch** is a Zotero 10 plugin that transforms Zotero RSS feeds into a research-focused discovery system with feed folders, metadata enrichment, filtering rules, relevance scoring, automated actions, and AI-assisted research model development.
+**RSSrch** is a Zotero 10 plugin that transforms Zotero RSS feeds into a research-focused discovery system with feed folders, library-aware triage, metadata enrichment, filtering rules, relevance scoring, automated actions, duplicate management, and AI-assisted research model development.
 
-RSSrch works with Zotero's existing RSS system. Zotero remains responsible for feed subscriptions, retrieval, storage, refresh, and native item management, while RSSrch adds research-oriented organization, evaluation, and triage.
+RSSrch works with Zotero's existing RSS system. Zotero remains responsible for feed subscriptions, retrieval, storage, refresh, and native item management, while RSSrch adds research-oriented organization, evaluation, prioritization, and triage.
 
-![RSSrch v1.0.0](<assets/images/RSSrch v1.0.0 release.png>)
+![RSSrch v1.0.0](<assets/images/RSSrch v1.1.1 release.png>)
+
+## What's new in 1.1.1
+
+RSSrch 1.1.1 improves selection stability when adding feed articles to My Library while **Hide library items** is enabled.
+
+The selected article now remains stable while library membership and metadata updates refresh the item list, preventing temporary jumps to neighboring articles during the save.
+
+**[Download RSSrch 1.1.1](https://github.com/SolveSaint/RSSrch-for-Zotero/releases/latest)**
 
 ## Features
+
+### Keep Feeds separate from My Library
+
+RSSrch can provide a persistent **Feeds** workspace beside **My Library**.
+
+Each workspace keeps its own source selection, search, tag filters, sort state, selected items, and scroll position. This keeps research discovery separate from normal library management while preserving Zotero's native workflow.
+
+Enable the separate workspace from **View → Feeds in Separate Tab**.
+
+![RSSrch Feeds Tab](<assets/images/RSSrch - Feeds Tab - Processed.png>)
+
+### Focus on papers that are new to your library
+
+RSSrch can determine whether feed articles are already represented in **My Library**.
+
+A compact item filter provides three views:
+
+- **Hide library items**
+- **Show all items**
+- **Only library items**
+
+Matched feed items display **In My Library** directly in the item list, and RSSrch can take you to the corresponding library item.
+
+This makes it possible to focus on genuinely new research without losing visibility into papers you have already saved.
+
+![RSSrch Library Filtering](<assets/images/RSSrch - Library Filtering.png>)
 
 ### Organize RSS feeds with folders
 
@@ -34,6 +82,12 @@ RSSrch also provides a folder dashboard with information about the selected rese
 ![RSSrch Folder Panel](<assets/images/RSSrch - Folder Panel.png>)
 
 See [[Feed Folders]].
+
+### Hide duplicate feed articles
+
+RSSrch can collapse exact duplicate feed articles across Feeds, individual subscriptions, and RSSrch folders without deleting the underlying Zotero feed items.
+
+Duplicate handling preserves the selected eligible copy when possible and prefers useful item states such as unread copies.
 
 ### Feed subjects and tag discovery
 
@@ -95,7 +149,7 @@ RSS feeds vary considerably in metadata quality.
 
 RSSrch can supplement sparse feed items with research-useful metadata such as abstracts, creators, DOI information, publication metadata, article type, subjects, and keywords.
 
-Enriched metadata can then improve filtering, scoring, and research triage.
+Enriched metadata can then improve filtering, scoring, duplicate handling, and research triage.
 
 See [[Metadata Enrichment]].
 
@@ -106,6 +160,8 @@ RSSrch integrates an abstract-focused research Reader directly into Zotero's fee
 ![RSSrch Reader Panel](<assets/images/RSSrch - Reader Panel.png>)
 
 The Reader brings together effective metadata, Include-rule highlights, Feed Subjects, tags, Relevance Score, Score Breakdown, read controls, article opening, copying, and Add to My Library.
+
+Library-aware filtering is integrated with this workflow so a selected article remains stable while it is added to My Library and the feed view refreshes.
 
 See [[Reader Workflow]].
 
@@ -137,13 +193,19 @@ Use the Research Setup Wizard to establish or import your initial research model
 
 See [[First Steps]].
 
-### 3. Organize your feeds
+### 3. Open the Feeds workspace
+
+If you want Feeds separated from My Library, enable **View → Feeds in Separate Tab**.
+
+The Feeds workspace preserves its own navigation, filters, sorting, selection, and scroll state.
+
+### 4. Organize your feeds
 
 Create RSSrch Feed Folders around your research areas and projects.
 
 See [[Feed Folders]].
 
-### 4. Configure the research model
+### 5. Configure the research model
 
 Use the [[Rule Manager]] to configure:
 
@@ -151,20 +213,22 @@ Use the [[Rule Manager]] to configure:
 - [[Relevance Scoring]]
 - [[Actions]]
 
-### 5. Test the model
+### 6. Test the model
 
 Use [[Preview and Rule Testing]] to inspect Admission and Relevance Scoring behavior before committing major changes.
 
-### 6. Review incoming research
+### 7. Review incoming research
 
-Use the [[Reader Workflow]] and Zotero's item list to triage papers, inspect rule evidence, review relevance scores, and save valuable articles to My Library.
+Use the Feeds workspace, library membership filter, [[Reader Workflow]], and Zotero's item list to triage papers, inspect rule evidence, review relevance scores, collapse duplicate feed entries, and save valuable articles to My Library.
 
-## First initialization
+## Initial preparation and background processing
 
-> [!warning] First initialization
-> RSSrch may need to process and enrich existing feed items when it is first initialized. Large RSS libraries can take a significant amount of time to complete this initial processing pass. This is expected.
+> [!note] Background processing
+> RSSrch avoids unnecessary whole-library work during Zotero startup. Some features prepare or validate data when they are first used, so large RSS libraries can still require additional background processing.
 
-Initial processing can include metadata inspection, enrichment, subject processing, Relevance Scoring, deduplication preparation, and local cache generation.
+Background preparation can include metadata inspection, enrichment, subject processing, score restoration, deduplication preparation, diagnostics, and local cache generation.
+
+Where possible, RSSrch performs this work in bounded batches and yields between operations so Zotero remains responsive.
 
 See [[Metadata Enrichment]] for more information.
 
@@ -172,6 +236,12 @@ See [[Metadata Enrichment]] for more information.
 
 RSSrch provides:
 
+- A separate **Feeds** workspace beside My Library
+- Independent Feeds and My Library navigation state
+- **Hide library items**, **Show all items**, and **Only library items** views
+- **In My Library** status directly in the Zotero item list
+- Direct navigation from matched feed items to My Library
+- Duplicate collapsing across feeds and folders
 - [[Feed Folders|Nested folders]] for organizing Zotero RSS feeds
 - Combined folder views containing descendant feed items
 - Folder dashboards and RSSrch Active controls
@@ -211,4 +281,4 @@ RSSrch provides:
 
 ## Download
 
-**[Download the latest RSSrch release](https://github.com/SolveSaint/RSSrch-for-Zotero/releases/latest)**
+**[Download RSSrch 1.1.1](https://github.com/SolveSaint/RSSrch-for-Zotero/releases/latest)**
