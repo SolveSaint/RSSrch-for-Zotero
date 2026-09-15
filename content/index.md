@@ -1,20 +1,6 @@
 ---
 created: 2026-08-24
-updated: 09/14/2026 7:59 PM
-title: RSSrch for Zotero
-description: A Zotero plugin for organizing RSS feeds, applying research rules, scoring relevance, and discovering papers aligned with your research goals.
-siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/
-tags:
-  - rssrch
-  - zotero
-  - research
-  - plugin
-aliases:
-  - RSSrch
----
----
-created: 2026-08-24
-updated: 09/14/2026 7:48 PM
+updated: 09/14/2026 8:05 PM
 title: RSSrch for Zotero
 description: A Zotero plugin for organizing RSS feeds, applying research rules, scoring relevance, and discovering papers aligned with your research goals.
 siteurl: https://solvesaint.github.io/RSSrch-for-Zotero/
