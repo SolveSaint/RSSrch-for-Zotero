@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea or improvement for Quartz
+about: Suggest an improvement to RSSrch for Zotero
 title: ""
 labels: enhancement
 assignees: ""
