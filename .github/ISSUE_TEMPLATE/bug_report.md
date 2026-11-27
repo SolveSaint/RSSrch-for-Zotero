@@ -1,40 +1,26 @@
 ---
 name: Bug report
-about: Something about Quartz isn't working the way you expect
+about: Report a problem with RSSrch for Zotero
 title: ""
 labels: bug
 assignees: ""
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+### What happened?
+Describe what went wrong. Include the exact error message if you saw one.
 
-**To Reproduce**
-Steps to reproduce the behavior:
+### Steps to reproduce
+1.
+2.
+3.
 
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+### What did you expect to happen?
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+### Your setup
+- RSSrch version:
+- Zotero version:
+- Operating system (include version if known):
+- Zotero interface language (optional):
 
-**Screenshots and Source**
-If applicable, add screenshots to help explain your problem.
-
-You can help speed up fixing the problem by either
-
-1. providing a simple reproduction
-2. linking to your Quartz repository where the problem can be observed
-
-**Desktop (please complete the following information):**
-
-- Quartz Version: [e.g. v4.1.2]
-- `node` Version: [e.g. v18.16]
-- `npm` version: [e.g. v10.1.0]
-- OS: [e.g. iOS]
-- Browser [e.g. chrome, safari]
-
-**Additional context**
-Add any other context about the problem here.
+### Screenshots or examples (optional)
+If this happens with a specific feed, share its URL only if it is public and does not contain a private access token. A screenshot can help; remove any private information before posting.
